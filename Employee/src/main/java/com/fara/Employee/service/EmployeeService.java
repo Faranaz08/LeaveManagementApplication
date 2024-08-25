@@ -32,7 +32,7 @@ public class EmployeeService{
     public String deleteLeaveById(String id) {
         
         	employeeRepository.deleteById(id);
-            return "Leave deleted successfully!";
+            return "Employee deleted successfully!";
         
     }
 //   public void deleteById(Long id) {

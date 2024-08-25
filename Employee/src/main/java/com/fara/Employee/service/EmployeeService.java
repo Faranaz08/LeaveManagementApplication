@@ -28,4 +28,15 @@ public class EmployeeService{
         return employeeRepository.findById(id);
 
     }
+    
+    public String deleteLeaveById(String id) {
+        
+        	employeeRepository.deleteById(id);
+            return "Leave deleted successfully!";
+        
+    }
+//   public void deleteById(Long id) {
+//    leaveStore.remove(id);
+//}
+	
 }

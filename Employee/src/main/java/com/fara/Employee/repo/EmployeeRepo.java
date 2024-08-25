@@ -20,4 +20,8 @@ public class EmployeeRepo{
 	    public EmployeePojo findById(String id) {
 	        return employees.stream().filter(emp -> emp.getId().equals(id)).findFirst().orElse(null);
 	    }
+	    public void deleteById(String id) {
+	    	employees.remove(id);
+	    }
+	  
 }
